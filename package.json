@@ -1,0 +1,15 @@
+{
+  "name": "shipit-tutorial",
+  "version": "0.0.0",
+  "description": "Shipit tutorial.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neoziro/shipit-tutorial.git"
+  },
+  "license": "MIT"
+}
