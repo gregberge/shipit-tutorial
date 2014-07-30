@@ -47,4 +47,12 @@ module.exports = function (grunt) {
     var current = grunt.config('shipit.options.deployTo') + '/current';
     grunt.shipit.remote('cd ' + current + ' && npm start', done);
   });
+
+  /**
+   * Run start task after deployment.
+   */
+
+  grunt.shipit.on('published', function () {
+    grunt.task.run(['start']);
+  });
 };
